@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "brandon";
+    src: url("/fonts/BrandonGrotesque/BrandonGrotesque-Bold.woff"), format("woff");
+}
+
+.header{
+    font-family: "Brandon Grotesque";
+}
+
+.btn{
+    padding: 0.65rem 2rem; 
+    background-color: var(--main-green); 
+    color: var(--third-black); 
+    transition: color 0.2s ease-in-out; 
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 15px;
+}  
+.btn:hover{
+    
+    color: white; 
+
+}
+.btn-green{
+    background-color: var(--main-green); 
+    color: var(--third-black);
+} 
+
+
+.container{
+    width: 1196px;
+    max-width: 85%; 
+    margin: 0 auto; 
+}
