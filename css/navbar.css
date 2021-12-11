@@ -1,9 +1,35 @@
+
 .navbar, header .container, .social-link-container{
     display: flex; 
 }
 
 header{
-    background-color: var(--third-black);
+    background-color: var(--third-black); 
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+
+.opacity-on{
+    /* opacity: 0;  */
+    background-color: rgba(0,0,0,0);
+    transition: background-color 0.5s ease-in-out;
+}
+.opacity-off{
+    /* opacity: 1;  */
+    transition: background-color 0.5s ease-in-out;
+    background-color: rgba(0,0,0,1);
+}
+
+
+@font-face {
+    font-family: "brandon";
+    src: url("/fonts/BrandonGrotesque/BrandonGrotesque-Bold.woff"), format("woff");
+}
+.header{
+    font-family: "Brandon Grotesque";
 } 
 
 header .container{
@@ -44,7 +70,11 @@ color: var(--fifth-white);
 
 @media only screen and (max-width: 988px) { 
     .logo-container{
-        left:40%;
+        left:40%; 
+        top: 25%;
+    } 
+    .logo-container a img{
+        width: 87px;
     }
     .nav-link, .social-link{
         margin-right: 1.2rem;  
@@ -54,6 +84,13 @@ color: var(--fifth-white);
  
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+    header .container{
+        height: 50px;
+        min-height: 11vh; 
+    }
+    .logo-container a img{
+        width: 57px;
+    }
     .nav-link{
         margin-right: 1.2rem;  
     }
