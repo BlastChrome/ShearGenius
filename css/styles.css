@@ -28,15 +28,15 @@
  .center-piece, .center-piece-2, .center-piece-3{
     width: 100%; 
     text-align: center; 
-    height: 50vh; 
+    height: 100vh; 
 } 
 
 .center-piece{
-    background-color: lightblue;
-} 
-.center-piece-2{
-    background-color: lightcoral;
-}
-.center-piece-3{
-    background-color: lightgreen;
-}
+    background-color: lightblue;  
+    background-image: url(/imgs/backgrounds/Bg-image.jpg); 
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;   
+}   
+
+ 
