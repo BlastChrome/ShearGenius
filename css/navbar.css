@@ -13,9 +13,7 @@ header{
     z-index: 6;
     font-family: "Brandon Grotesque";
 }
-.mobile-nav-container{
-    display: none;
-}
+
 header .container{
     justify-content: space-between;  
     align-items: center;
@@ -25,7 +23,7 @@ header .container{
 } 
 .logo-container{
     top: 13%; 
-    left: 47%;
+    left: 45%;
     position: absolute;
     cursor: pointer;  
 }    
@@ -36,7 +34,7 @@ header .container{
 .nav-link{
 margin-right: 2rem;  
 font-weight: 300;
-font-size: 18px; 
+font-size: 20px; 
 transition: color 0.2s ease-in-out; 
 cursor: pointer;
 color: var(--fifth-white);   
@@ -47,7 +45,7 @@ color: var(--fifth-white);
 } 
 .social-link{ 
     cursor: pointer;
-    margin-right: 2rem;
+    margin-right: 1rem;
 } 
 .opacity-on{
     background-color: rgba(0,0,0,0) !important;
@@ -115,20 +113,9 @@ color: var(--fifth-white);
 }
 
 
-
-
-/* .logo-container, .navbar , .social-link, .mb-navbar, .navbar-book-btn, .mobile-nav-btn, .mb-social-links, .center-piece-text, .center-piece-btn{ 
-    
-    animation-duration: s; 
-    animation-name: fade-and-slide;
-} 
-*/  
-
-
-
 @media only screen and (max-width: 988px) { 
     .logo-container{
-        left:40%; 
+        left:45%; 
         top: 25%;
     } 
     .logo-container a img{
@@ -136,7 +123,10 @@ color: var(--fifth-white);
     }
     .nav-link, .social-link{
         margin-right: 1.2rem;  
-    } 
+    }  
+    .nav-link{
+        font-size: 20px; 
+    }
 
 }
  
@@ -145,10 +135,10 @@ color: var(--fifth-white);
 
     header .container{
     height: 50px;
-    min-height: 11vh; 
+    min-height: 11vh;  
     }
     .logo-container a img{
-        width: 57px;
+        width: 77px;
     }
     .nav-link{
     margin-right: 1.2rem;  

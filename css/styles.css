@@ -96,19 +96,42 @@ body{
 }
 
 .center-piece-text{
-    font-size: 27px;  
+    font-size: 32px;
+    width: 100%; 
     font-family: "Dex";
     font-weight: regular; 
     letter-spacing: 2px;
     color: var(--fifth-white);  
-    /* position: absolute;
-    top: 38%;    */
 } 
 .center-piece-btn{
-    margin-top: 2rem;
-    /* position: absolute; 
-    left: 37%;
-    top: 50%;  */
+    margin-top: 4rem;
+} 
+
+.center-piece-btn a{
+    
+    font-size: 23px; 
+    padding: 15px 45px;
 }
 
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) { 
+    .center-piece-text{
+        width: 80%;
+        font-size: 40px;
+    } 
+
+}
+
+@media only screen and (min-width: 988px) { 
+    .center-piece-text{ 
+        margin-top: 9rem;
+        max-width: 700px;
+        font-size: 52px;
+    }
+
+}
  
+
