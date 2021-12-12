@@ -3,11 +3,45 @@
     src: url(/fonts/Dex_Gothic_Becker_Solid_Regular/Dex\ Gothic_Becker_Solid_Regular.ttf);
 }
 
+body{
+    background-color: black;
+}
+
+.animate{
+    animation-duration: 0.4s; 
+    animation-name: fade-and-slide;
+} 
+.animate-out{
+    animation-duration: 0.4s; 
+    animation-name: fade-and-slide-out;
+}
+@keyframes fade-and-slide {
+    from {
+        transform: translateY(20px);
+        opacity: 0
+    } 
+    top{
+        transform: translateY(0px); 
+        opacity: 1;
+    }
+}
+@keyframes fade-and-slide-out {
+    from {
+        transform: translateY(-20px);
+        opacity: 1;
+    } 
+    top{
+        transform: translateY(0px); 
+        opacity: 0;
+    }
+}
+
+
 .btn{
     padding: 0.65rem 2rem; 
     /* background-color: var(--main-green);  */
     /* color: var(--third-black);  */
-    /* transition: color 0.2s ease-in-out;  */
+    transition: color 0.2s ease-in-out; 
     font-weight: normal;
     cursor: pointer;
     font-size: 15px; 
@@ -31,11 +65,15 @@
     margin: 0 auto; 
 } 
 
+.d-none{
+    visibility: hidden ;
+} 
+
 
 /* MAIN */ 
 
 /* centerpiece */ 
- .center-piece, .center-piece-2, .center-piece-3{
+ .center-piece{
     width: 100%; 
     text-align: center; 
     height: 100vh;  
