@@ -2,6 +2,10 @@
     font-family: "Dex";
     src: url(/fonts/Dex_Gothic_Becker_Solid_Regular/Dex\ Gothic_Becker_Solid_Regular.ttf);
 }
+@font-face {
+    font-family: "brandon";
+    src: url("/fonts/BrandonGrotesque/BrandonGrotesque-Regular.ttf");
+}
 
 body{
     background-color: black;
@@ -12,12 +16,16 @@ body{
     animation-name: fade-and-slide;
 } 
 .animate-out{
-    animation-duration: 0.4s; 
+    animation-duration: 0.4s;
     animation-name: fade-and-slide-out;
 }
+
+
+
+
 @keyframes fade-and-slide {
     from {
-        transform: translateY(20px);
+        transform: translateY(35px);
         opacity: 0
     } 
     top{
@@ -27,7 +35,7 @@ body{
 }
 @keyframes fade-and-slide-out {
     from {
-        transform: translateY(-20px);
+        transform: translateY(-35px);
         opacity: 1;
     } 
     top{
@@ -35,7 +43,6 @@ body{
         opacity: 0;
     }
 }
-
 
 .btn{
     padding: 0.65rem 2rem; 
@@ -111,16 +118,91 @@ body{
     
     font-size: 23px; 
     padding: 15px 45px;
+} 
+
+
+/*  tagline and contact */ 
+
+.tagline-wrapper{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+.tagline-wrapper .tagline-btn{
+    margin: 4rem 0;
+}
+.sub-title, .sub-text{
+    color: var(--fifth-white); 
+    text-align: center;
+} 
+
+.sub-title{
+    margin: 2.5rem 0;
+    letter-spacing: 1px;
+    font-family: 'Dex'; 
+    font-size: 28px; 
+
+}
+.sub-text{ 
+    margin:0 auto;
+    max-width: 740px;
+    font-family: "brandon";
+    font-size: 20px;
+    letter-spacing: 1px; 
+    word-spacing: 0px;
+    line-height: 28 px;
+} 
+
+.contact-wrapper .sub-title{
+    margin: 3rem 0 1.5rem 0;
+}
+.contact-wrapper .contact-card{
+    margin: 5rem 0;
+}
+.tel-link{
+    color: var(--main-green);
+}
+.tagline-line{
+    background-color: var(--main-green); 
+    width: 100%; 
+    height: 2px; 
+    margin-bottom: 2rem;
 }
 
-
-
+/* Banner */ 
+.banner{
+    position: relative; 
+} 
+.banner-wrapper{
+    background-image: url(/imgs/backgrounds/tools-embellished.jpg); 
+    background-size: cover; 
+    background-position: center;
+    height: 310px;
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) { 
     .center-piece-text{
         width: 80%;
         font-size: 40px;
+    } 
+
+    .sub-text{ 
+        font-size: 24px;
+    } 
+    .contact-wrapper{ 
+
+        display: flex; 
+        justify-content: space-between;
+    }
+    .contact-wrapper a{
+        cursor: pointer;
+    }
+    .contact-wrapper .sub-text{
+        font-size: 1.3rem;
+    }
+    .contact-wrapper .contact-card{
+        margin: 0; 
     } 
 
 }
@@ -131,7 +213,19 @@ body{
         max-width: 700px;
         font-size: 52px;
     }
-
+    .sub-title{
+        margin: 5.5rem 0;
+        font-size: 38px;
+    }
+    .sub-text{ 
+        font-size: 28px;
+        letter-spacing: 2px; 
+        word-spacing: 3px;
+        line-height: 40px;
+    }
+    .contact-wrapper .card{
+        margin: 0;
+    }
 }
  
 
