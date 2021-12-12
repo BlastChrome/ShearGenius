@@ -1,12 +1,17 @@
+@font-face {
+    font-family: "Dex";
+    src: url(/fonts/Dex_Gothic_Becker_Solid_Regular/Dex\ Gothic_Becker_Solid_Regular.ttf);
+}
 
 .btn{
     padding: 0.65rem 2rem; 
-    background-color: var(--main-green); 
-    color: var(--third-black); 
-    transition: color 0.2s ease-in-out; 
+    /* background-color: var(--main-green);  */
+    /* color: var(--third-black);  */
+    /* transition: color 0.2s ease-in-out;  */
     font-weight: normal;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 15px; 
+    font-family: "Brandon Grotesque";
 }  
 .btn:hover{
     color: white; 
@@ -14,7 +19,12 @@
 .btn-green{
     background-color: var(--main-green); 
     color: var(--third-black);
-} 
+}  
+.btn-black {
+    background-color: var(--third-black); 
+    color: var(--fifth-white); 
+
+}
 .container{
     width: 1196px;
     max-width: 85%; 
@@ -28,7 +38,8 @@
  .center-piece, .center-piece-2, .center-piece-3{
     width: 100%; 
     text-align: center; 
-    height: 100vh; 
+    height: 100vh;  
+    position: relative;
 } 
 
 .center-piece{
@@ -38,5 +49,28 @@
     background-size: cover; 
     background-repeat: no-repeat;   
 }   
+.center-piece .container{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;  
+    height: 100%;
+}
+
+.center-piece-text{
+    font-size: 27px;  
+    font-family: "Dex";
+    font-weight: regular; 
+    letter-spacing: 2px;
+    color: var(--fifth-white);  
+    /* position: absolute;
+    top: 38%;    */
+} 
+.center-piece-btn{
+    margin-top: 2rem;
+    /* position: absolute; 
+    left: 37%;
+    top: 50%;  */
+}
 
  

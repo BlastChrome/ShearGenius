@@ -40,6 +40,7 @@ font-size: 18px;
 transition: color 0.2s ease-in-out; 
 cursor: pointer;
 color: var(--fifth-white);   
+
 } 
 .nav-link:hover{
     color: var(--main-green);
@@ -54,7 +55,7 @@ color: var(--fifth-white);
 } 
 .opacity-full-on{
     opacity: 0 !important; 
-    transition: opacity 0.5s ease-in-out;
+    transition:  0.5s ease-in-out;
 }
 .opacity-off{
     transition: background-color 0.5s ease-in-out;
@@ -62,8 +63,48 @@ color: var(--fifth-white);
 }   
 .opacity-full-off{
     opacity: 1 !important; 
-    transition: opacity 0.5s ease-in-out;
+    transition:  0.5s ease-in-out;
+} 
+
+.mobile-nav-container{
+    opacity: 0;
 }
+ 
+
+.mb-nav-btn{
+    margin-top: 4rem; 
+    transform: scale(1.5);
+} 
+
+.mb-nav-link, .mb-social-links{
+    font-weight: 300; 
+    cursor: pointer; 
+    transition: color 0.2s ease-in-out;
+}
+.mb-nav-link:hover{
+    color: var(--main-green);
+} 
+
+
+
+.logo-container, .navbar , .social-link, .nav-btn, .mb-navbar, .navbar-book-btn, .mobile-nav-btn, .mb-social-links, .center-piece-text, .center-piece-btn{
+    
+    animation-duration: 1s; 
+    animation-name: fade-and-slide;
+} 
+@keyframes fade-and-slide {
+    from {
+        transform: translateY(20px);
+        opacity: 0
+    } 
+    top{
+        transform: translateY(0px); 
+        opacity: 1;
+    }
+}
+
+
+
 
 @media only screen and (max-width: 988px) { 
     .logo-container{
@@ -80,7 +121,8 @@ color: var(--fifth-white);
 }
  
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) { 
+
     header .container{
     height: 50px;
     min-height: 11vh; 
@@ -91,7 +133,7 @@ color: var(--fifth-white);
     .nav-link{
     margin-right: 1.2rem;  
     }
-    .navbar,.social-link, .header .btn{
+    .navbar,.social-link, .header .navbar-book-btn{
     left: 150%;
     position: absolute;
     z-index: 8;
@@ -105,7 +147,8 @@ color: var(--fifth-white);
     height: 100vh;  
     /* opacity: 0; */
     background-color: var(--third-black); 
-    color: var(--fifth-white);  
+    color: var(--fifth-white);   
+    
     }  
 
     .mb-nav-wrapper{
