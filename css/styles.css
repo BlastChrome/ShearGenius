@@ -20,6 +20,26 @@ body{
     animation-name: fade-and-slide-out;
 }
 
+h1, 
+h2, 
+p, 
+.center-piece-btn,
+.tagline-btn{
+ transition: 1s;
+ transform:translateY(20px) ;
+ opacity: 0;
+} 
+
+h1[data-scroll="in"],
+ h2[data-scroll="in"], 
+ p[data-scroll="in"],
+ a[data-scroll="in"],
+ .center-piece-btn[data-scroll="in"],
+ .tagline-btn[data-scroll="in"]{
+    transform: translateY(0);
+    transition-delay: 0.5s; 
+    opacity: 1;
+}
 
 
 
@@ -46,8 +66,6 @@ body{
 
 .btn{
     padding: 0.65rem 2rem; 
-    /* background-color: var(--main-green);  */
-    /* color: var(--third-black);  */
     transition: color 0.2s ease-in-out; 
     font-weight: normal;
     cursor: pointer;
@@ -174,11 +192,22 @@ body{
     position: relative; 
 } 
 .banner-wrapper{
+    margin-top: 5rem;
     background-image: url(/imgs/backgrounds/tools-embellished.jpg); 
     background-size: cover; 
     background-position: center;
     height: 310px;
 }
+
+.closed-text{
+    color: var(--sixth-tan);
+}
+
+.the-menu{
+    background-color: var(--sixth-tan);
+
+}
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) { 
