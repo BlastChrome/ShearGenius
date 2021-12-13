@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "brandon";
+    src: url("/fonts/BrandonGrotesque/BrandonGrotesque-Regular.ttf");
+}
 
 .navbar, header .container, .social-link-container{
     display: flex; 
@@ -8,8 +12,9 @@ header{
     top: 0;
     width: 100%;
     z-index: 6; 
-    min-height: 12vh;
-    font-family: "Brandon Grotesque";
+    min-height: 13vh;
+    font-family: "brandon";
+    /* font-family: "Brandon Grotesque"; */
 }
 
 header .container{

@@ -12,7 +12,7 @@ body{
 }
 
 .animate{
-    animation-duration: 0.4s; 
+    animation-duration: 0.5s; 
     animation-name: fade-and-slide;
 } 
 .animate-out{
@@ -20,26 +20,32 @@ body{
     animation-name: fade-and-slide-out;
 }
 
+/* Scroll in animation element selectors */
 h1, 
-h2, 
+h2,  
+h3,
 p, 
-.center-piece-btn,
+.center-piece-btn, 
+.menu-btn,
 .tagline-btn{
- transition: 1s;
+ transition: 0.8s;
  transform:translateY(20px) ;
  opacity: 0;
 } 
 
 h1[data-scroll="in"],
  h2[data-scroll="in"], 
+ h3[data-scroll="in"], 
  p[data-scroll="in"],
  a[data-scroll="in"],
+ .menu-btn[data-scroll="in"],
  .center-piece-btn[data-scroll="in"],
  .tagline-btn[data-scroll="in"]{
     transform: translateY(0);
-    transition-delay: 0.5s; 
+    transition-delay: 0.2s; 
     opacity: 1;
 }
+/* Scroll in animation element selectors end */
 
 
 
@@ -82,8 +88,12 @@ h1[data-scroll="in"],
 .btn-black {
     background-color: var(--third-black); 
     color: var(--fifth-white); 
-
 }
+.btn-tan {
+    background-color: var(--third-black); 
+    color: var(--sixth-tan); 
+}
+
 .container{
     width: 1196px;
     max-width: 85%; 
@@ -152,7 +162,9 @@ h1[data-scroll="in"],
 .sub-title, .sub-text{
     color: var(--fifth-white); 
     text-align: center;
-} 
+}  
+
+
 
 .sub-title{
     margin: 2.5rem 0;
@@ -195,7 +207,8 @@ h1[data-scroll="in"],
     margin-top: 5rem;
     background-image: url(/imgs/backgrounds/tools-embellished.jpg); 
     background-size: cover; 
-    background-position: center;
+    background-position: center; 
+
     height: 310px;
 }
 
@@ -204,11 +217,57 @@ h1[data-scroll="in"],
 }
 
 .the-menu{
+    padding: 5rem 0;
     background-color: var(--sixth-tan);
-
+} 
+.the-menu .container{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
 }
 
 
+.the-menu .menu-card-wrapper{
+    margin-top: 5rem;
+    display: grid; 
+    grid-template-columns: 1fr;
+}
+
+.the-menu .sub-title,.the-menu .sub-text{
+    margin-top: 3.5rem;
+    color: var(--third-black);  
+}
+
+.the-menu .sub-title, .the-menu .sub-text{
+    margin: 0;
+} 
+.the-menu .menu-card{
+    margin-bottom: 4rem; 
+    font-family: "brandon"; 
+
+    
+} 
+.card-text, .card-title{
+    text-align: center;     
+} 
+.card-title{
+    font-size: 26px;
+    font-weight: bold;
+}
+.card-text{
+    margin-top: 8px;
+    font-size: 23px;
+}
+.card-content{
+    text-align: center; 
+    font-size: 17px;
+    color: var(--seventh-tan);
+}
+
+.menu-btn a{
+    font-size: 23px; 
+    padding: 15px 45px;
+} 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) { 
     .center-piece-text{
@@ -233,6 +292,9 @@ h1[data-scroll="in"],
     .contact-wrapper .contact-card{
         margin: 0; 
     } 
+    .the-menu .menu-card-wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
 
 }
 
@@ -243,7 +305,7 @@ h1[data-scroll="in"],
         font-size: 52px;
     }
     .sub-title{
-        margin: 5.5rem 0;
+        margin: 6.5rem 0 2rem 0;
         font-size: 38px;
     }
     .sub-text{ 
@@ -254,6 +316,19 @@ h1[data-scroll="in"],
     }
     .contact-wrapper .card{
         margin: 0;
+    } 
+    .the-menu .menu-card-wrapper{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card-title{
+        font-size: 24px;
+    }
+    .card-text{
+        font-size: 21px;
+    }
+    .card-content{
+        font-size: 15px;
     }
 }
  
