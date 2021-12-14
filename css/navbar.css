@@ -13,6 +13,7 @@ header{
     width: 100%;
     z-index: 6; 
     min-height: 13vh;
+    max-height: 20vh;
     font-family: "brandon";
     /* font-family: "Brandon Grotesque"; */
 }

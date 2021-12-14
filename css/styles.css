@@ -27,7 +27,12 @@ h3,
 p, 
 .center-piece-btn, 
 .menu-btn,
-.tagline-btn{
+.tagline-btn,
+.footer-book-btn,
+.footer-logo,
+.footer-social-container, 
+.footer-line, 
+.img-item{
  transition: 0.8s;
  transform:translateY(20px) ;
  opacity: 0;
@@ -38,7 +43,12 @@ h1[data-scroll="in"],
  h3[data-scroll="in"], 
  p[data-scroll="in"],
  a[data-scroll="in"],
+ .footer-logo[data-scroll="in"],
+ .footer-book-btn[data-scroll="in"], 
+ .footer-line[data-scroll="in"],
+ .footer-social-container[data-scroll="in"],
  .menu-btn[data-scroll="in"],
+ .img-item[data-scroll="in"],
  .center-piece-btn[data-scroll="in"],
  .tagline-btn[data-scroll="in"]{
     transform: translateY(0);
@@ -80,7 +90,9 @@ h1[data-scroll="in"],
 }  
 .btn:hover{
     color: white; 
-}
+} 
+
+
 .btn-green{
     background-color: var(--main-green); 
     color: var(--third-black);
@@ -190,13 +202,18 @@ h1[data-scroll="in"],
     margin: 5rem 0;
 }
 .tel-link{
-    color: var(--main-green);
+    color: var(--main-green); 
+    cursor: pointer; 
+    text-decoration: underline;
 }
 .tagline-line{
     background-color: var(--main-green); 
     width: 100%; 
     height: 2px; 
     margin-bottom: 2rem;
+}
+.img-item{
+    cursor: pointer;
 }
 
 /* Banner */ 
@@ -213,7 +230,8 @@ h1[data-scroll="in"],
 }
 
 .closed-text{
-    color: var(--sixth-tan);
+    color: var(--sixth-tan); 
+    text-decoration: line-through;
 }
 
 .the-menu{
@@ -268,6 +286,25 @@ h1[data-scroll="in"],
     font-size: 23px; 
     padding: 15px 45px;
 } 
+
+/* Village */ 
+.village{
+    padding: 5rem 0;
+    background-color: var(--fourth-blue);
+}
+.village .sub-title{
+    margin: 0;
+}
+
+.village img{
+    width: 100%;
+}
+
+.village .img-container{
+    margin-top: 5rem;
+    display:  grid; 
+    
+}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) { 
     .center-piece-text{
@@ -293,6 +330,11 @@ h1[data-scroll="in"],
         margin: 0; 
     } 
     .the-menu .menu-card-wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+    .village .img-container{
+        margin-top: 5rem;
+        display:  grid; 
         grid-template-columns: 1fr 1fr;
     }
 
@@ -329,6 +371,11 @@ h1[data-scroll="in"],
     }
     .card-content{
         font-size: 15px;
+    }
+    .village .img-container{
+        margin-top: 5rem;
+        display:  grid; 
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
  
