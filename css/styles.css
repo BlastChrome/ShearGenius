@@ -127,9 +127,13 @@ h1[data-scroll="in"],
     position: relative;
 } 
 
-.center-piece{
-    background-color: lightblue;  
+.center-piece-home{
+    background-color: var(--fourth-blue);  
     background-image: url(/imgs/backgrounds/Bg-image.jpg); 
+}
+
+.center-piece{
+
     background-position: center; 
     background-size: cover; 
     background-repeat: no-repeat;   
