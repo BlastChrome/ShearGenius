@@ -7,6 +7,8 @@
     src: url("/fonts/BrandonGrotesque/BrandonGrotesque-Regular.ttf");
 }
 
+/* universal styles */
+
 body{
     background-color: black;
 }
@@ -19,6 +21,7 @@ body{
     animation-duration: 0.4s;
     animation-name: fade-and-slide-out;
 }
+
 
 /* Scroll in animation element selectors */
 h1, 
@@ -86,7 +89,7 @@ h1[data-scroll="in"],
     font-weight: normal;
     cursor: pointer;
     font-size: 15px; 
-    font-family: "Brandon Grotesque";
+    font-family: "brandon";
 }  
 .btn:hover{
     color: white; 
@@ -116,28 +119,24 @@ h1[data-scroll="in"],
     visibility: hidden ;
 } 
 
-
-/* MAIN */ 
-
 /* centerpiece */ 
- .center-piece{
+.center-piece{
     width: 100%; 
     text-align: center; 
     height: 100vh;  
     position: relative;
-} 
-
-.center-piece-home{
-    background-color: var(--fourth-blue);  
-    background-image: url(/imgs/backgrounds/Bg-image.jpg); 
-}
-
-.center-piece{
-
+    background-color: var(--fourth-blue); 
     background-position: center; 
     background-size: cover; 
     background-repeat: no-repeat;   
-}   
+} 
+
+.center-piece-home{
+    background-image: url(/imgs/backgrounds/Bg-image.jpg); 
+} 
+.center-piece-contact{
+    background-image: url(/imgs/backgrounds/Bg-image-contact.jpg); 
+}
 .center-piece .container{
     display: flex; 
     flex-direction: column;
@@ -150,16 +149,14 @@ h1[data-scroll="in"],
     font-size: 32px;
     width: 100%; 
     font-family: "Dex";
-    font-weight: regular; 
     letter-spacing: 2px;
     color: var(--fifth-white);  
 } 
 .center-piece-btn{
-    margin-top: 4rem;
+    margin-top: 4.5rem;
 } 
 
 .center-piece-btn a{
-    
     font-size: 23px; 
     padding: 15px 45px;
 } 
@@ -172,25 +169,51 @@ h1[data-scroll="in"],
     flex-direction: column; 
     align-items: center;
 }
+
+
 .tagline-wrapper .tagline-btn{
-    margin: 4rem 0;
+    margin: 3rem 0;
 }
 .sub-title, .sub-text{
-    color: var(--fifth-white); 
     text-align: center;
 }  
 
+.dark-bg .sub-title, .dark-bg .sub-text{
+    color: var(--fifth-white);
+} 
+
+.contact-form-input-wrapper{
+    margin: 1.5rem 0;
+}
+
+.input-wrapper{
+    margin: 0 0 1.5rem 0;
+}
+
+.input-wrapper label{
+    font-weight: bold;
+}
+
+.input-wrapper input.sub-text, textarea{
+    width: 100%;  
+    font-size: 16px;
+    padding: 0 0.5rem;
+    background-color: white;
+}
+.input-wrapper input.sub-text{
+    height: 33px; 
+}
 
 
 .sub-title{
-    margin: 2.5rem 0;
-    letter-spacing: 1px;
+    margin: 3rem 0;
+    letter-spacing: 2px;
     font-family: 'Dex'; 
     font-size: 28px; 
 
 }
 .sub-text{ 
-    margin:0 auto;
+    margin: 0 auto;
     max-width: 740px;
     font-family: "brandon";
     font-size: 20px;
@@ -200,10 +223,10 @@ h1[data-scroll="in"],
 } 
 
 .contact-wrapper .sub-title{
-    margin: 3rem 0 1.5rem 0;
+    margin: 3rem 0 0.25rem 0;
 }
 .contact-wrapper .contact-card{
-    margin: 5rem 0;
+    margin: 3rem 0;
 }
 .tel-link{
     color: var(--main-green); 
@@ -229,16 +252,15 @@ h1[data-scroll="in"],
     background-image: url(/imgs/backgrounds/tools-embellished.jpg); 
     background-size: cover; 
     background-position: center; 
-
     height: 310px;
 }
 
-.closed-text{
+ .dark-bg .closed-text{
     color: var(--sixth-tan); 
     text-decoration: line-through;
 }
 
-.the-menu{
+.the-menu,.contact-section{
     padding: 5rem 0;
     background-color: var(--sixth-tan);
 } 
@@ -254,6 +276,9 @@ h1[data-scroll="in"],
     display: grid; 
     grid-template-columns: 1fr;
 }
+.tel-blue{
+    color: var(--fourth-blue);
+}
 
 .the-menu .sub-title,.the-menu .sub-text{
     margin-top: 3.5rem;
@@ -266,8 +291,6 @@ h1[data-scroll="in"],
 .the-menu .menu-card{
     margin-bottom: 4rem; 
     font-family: "brandon"; 
-
-    
 } 
 .card-text, .card-title{
     text-align: center;     
@@ -306,9 +329,19 @@ h1[data-scroll="in"],
 
 .village .img-container{
     margin-top: 5rem;
-    display:  grid; 
-    
+    display:  grid;  
 }
+
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    background-color: var(--fourth-blue);
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) { 
     .center-piece-text{
