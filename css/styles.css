@@ -261,7 +261,8 @@ h1[data-scroll="in"],
 }
 
 .contact-section{
-    background-color: var(--fourth-blue);
+    /* background-color: var(--fourth-blue); */
+    background-color: var(--sixth-tan);
 }
 .the-menu,.contact-section{
     padding: 5rem 0; 
@@ -338,19 +339,20 @@ h1[data-scroll="in"],
 }
 
 .contact-top-half img{
-    width: 100%;
+    width: 70%;
 }
 
 .contact-top-half{
     display: flex; 
     flex-direction: column;
+    align-items: center;
 }
 .contact-top-half .sub-title{
-    text-align: left; 
+    text-align: center; 
     margin: 1.25rem 0;
 }
 .contact-top-half .sub-text{
-    text-align: left; 
+    text-align: center; 
 }
 /* Set the size of the div element that contains the map */
 #map {
@@ -394,7 +396,7 @@ h1[data-scroll="in"],
         grid-template-columns: 1fr 1fr;
     }
     .contact-top-half img{
-        width: 40%; 
+        width: 50%; 
     }
     
     .contact-top-half{
@@ -402,18 +404,16 @@ h1[data-scroll="in"],
         align-items: flex-start;
         justify-content: space-between;
         flex-direction: row; 
-        /* background-color: red; */
     } 
     .contact-form-wrapper{
         width: 45%;
     }
     .contact-top-half .sub-title{
-        margin: 0;
         font-size: 40px; 
         text-align: left;
     } 
     .contact-top-half .sub-text{
-        font-size: 18px; 
+        font-size: 20px; 
         text-align: left;
     }
 
@@ -464,13 +464,20 @@ h1[data-scroll="in"],
         width: 45%;  
         margin-bottom: 3rem;
     }
+    .contact-form-wrapper{
+        width: 50%;
+    }
     .contact-top-half .sub-title{
-        margin-bottom: 1.5rem;
+        margin: 0 0 1rem 0;
+        /* margin-bottom: 1rem; */
         font-size: 56px;
     }
     .contact-top-half .sub-text{
         font-size: 20px; 
         line-height: 30px;
+    }
+    .contact-top-half form{
+        margin-top: 2.8rem;
     }
     
 }
