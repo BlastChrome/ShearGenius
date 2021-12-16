@@ -260,8 +260,13 @@ h1[data-scroll="in"],
     text-decoration: line-through;
 }
 
+.contact-section{
+    background-color: var(--fourth-blue);
+}
 .the-menu,.contact-section{
-    padding: 5rem 0;
+    padding: 5rem 0; 
+}
+.the-menu{
     background-color: var(--sixth-tan);
 } 
 .the-menu .container{
@@ -332,7 +337,21 @@ h1[data-scroll="in"],
     display:  grid;  
 }
 
+.contact-top-half img{
+    width: 100%;
+}
 
+.contact-top-half{
+    display: flex; 
+    flex-direction: column;
+}
+.contact-top-half .sub-title{
+    text-align: left; 
+    margin: 1.25rem 0;
+}
+.contact-top-half .sub-text{
+    text-align: left; 
+}
 /* Set the size of the div element that contains the map */
 #map {
     height: 400px;
@@ -374,7 +393,31 @@ h1[data-scroll="in"],
         display:  grid; 
         grid-template-columns: 1fr 1fr;
     }
+    .contact-top-half img{
+        width: 40%; 
+    }
+    
+    .contact-top-half{
+        display: flex; 
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: row; 
+        /* background-color: red; */
+    } 
+    .contact-form-wrapper{
+        width: 45%;
+    }
+    .contact-top-half .sub-title{
+        margin: 0;
+        font-size: 40px; 
+        text-align: left;
+    } 
+    .contact-top-half .sub-text{
+        font-size: 18px; 
+        text-align: left;
+    }
 
+    
 }
 
 @media only screen and (min-width: 988px) { 
@@ -414,6 +457,21 @@ h1[data-scroll="in"],
         display:  grid; 
         grid-template-columns: 1fr 1fr 1fr;
     }
+    contact-form-wrapper{
+        width: 100%;
+    }
+    .contact-top-half img{
+        width: 45%;  
+        margin-bottom: 3rem;
+    }
+    .contact-top-half .sub-title{
+        margin-bottom: 1.5rem;
+        font-size: 56px;
+    }
+    .contact-top-half .sub-text{
+        font-size: 20px; 
+        line-height: 30px;
+    }
+    
 }
- 
 

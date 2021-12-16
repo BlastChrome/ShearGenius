@@ -1,0 +1,22 @@
+{
+  "name": "sheargenius",
+  "version": "1.0.0",
+  "description": "Website for the barbershop Shear Genius in Hawthorne, utilizes the google maps javascript API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlastChrome/ShearGenius.git"
+  },
+  "author": "Nicholas Jackson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlastChrome/ShearGenius/issues"
+  },
+  "homepage": "https://github.com/BlastChrome/ShearGenius#readme",
+  "devDependencies": {
+    "@types/google.maps": "^3.47.2"
+  }
+}
