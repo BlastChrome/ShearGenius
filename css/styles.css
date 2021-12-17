@@ -136,7 +136,11 @@ h1[data-scroll="in"],
 } 
 .center-piece-contact{
     background-image: url(/imgs/backgrounds/Bg-image-contact.jpg); 
+} 
+.center-piece-services{
+    background-image: url(/imgs/backgrounds/Bg-image-Services.jpg);
 }
+
 .center-piece .container{
     display: flex; 
     flex-direction: column;
@@ -170,6 +174,35 @@ h1[data-scroll="in"],
     align-items: center;
 }
 
+.services .tagline-wrapper{
+    margin: 5rem 0 0 0;
+}
+.services .contact-bottom-half{
+    margin: 5rem 0;
+}
+.services .village .container{
+    position: relative; 
+}
+.services .village .sub-title{
+    position: absolute; 
+    font-size: 30px;
+    top: 25%; 
+}
+
+.services .village img{
+    width: 100%;
+}
+.services .village .dt-image{
+    display: none;
+}
+.services .village  .mb-image{
+
+} 
+.services .village .quoted-name{
+    margin: 3.4rem 0;
+    font-size: 20px;
+    /* display: block; */
+}
 
 .tagline-wrapper .tagline-btn{
     margin: 3rem 0;
@@ -348,7 +381,8 @@ h1[data-scroll="in"],
     align-items: center;
 }
 .contact-top-half .sub-title{
-    text-align: center; 
+    text-align: center;  
+    font-size: 36px;
     margin: 1.25rem 0;
 }
 .contact-top-half .sub-text{
@@ -416,8 +450,17 @@ h1[data-scroll="in"],
         font-size: 20px; 
         text-align: left;
     }
-
-    
+    .services .village .mb-image{
+        display: none;
+    }
+    .services .village .dt-image{
+        display: block;
+    }
+    .services .village .sub-title{  
+        
+        font-size: 45px;
+        top: 25%; 
+    }
 }
 
 @media only screen and (min-width: 988px) { 
@@ -457,7 +500,7 @@ h1[data-scroll="in"],
         display:  grid; 
         grid-template-columns: 1fr 1fr 1fr;
     }
-    contact-form-wrapper{
+    .contact-form-wrapper{
         width: 100%;
     }
     .contact-top-half img{
@@ -469,7 +512,6 @@ h1[data-scroll="in"],
     }
     .contact-top-half .sub-title{
         margin: 0 0 1rem 0;
-        /* margin-bottom: 1rem; */
         font-size: 56px;
     }
     .contact-top-half .sub-text{
@@ -479,6 +521,9 @@ h1[data-scroll="in"],
     .contact-top-half form{
         margin-top: 2.8rem;
     }
-    
+    .services .village .sub-title{  
+        font-size: 50px;
+        top: 35%; 
+    }
 }
 
