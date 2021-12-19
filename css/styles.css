@@ -139,6 +139,9 @@ h1[data-scroll="in"],
 } 
 .center-piece-services{
     background-image: url(/imgs/backgrounds/Bg-image-Services.jpg);
+} 
+.center-piece-about{
+    background-image: url(/imgs/backgrounds/About-bg-image.jpg);
 }
 
 .center-piece .container{
@@ -195,13 +198,44 @@ h1[data-scroll="in"],
 .services .village .dt-image{
     display: none;
 }
-.services .village  .mb-image{
 
-} 
 .services .village .quoted-name{
     margin: 3.4rem 0;
     font-size: 20px;
-    /* display: block; */
+}
+
+
+.about .tag-line {  
+    padding-bottom: 3rem;
+    background-color: var(--fourth-blue);
+} 
+
+
+.about .headshot-container{ 
+    margin: 5rem 0; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end; 
+    align-items: center;
+} 
+.about .headshot-container .sub-text{
+    margin-bottom: 2rem;
+}
+.about .text-wrapper{
+    margin-top: 2.5rem; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+.headshot-container img{
+    width: 95%;
+}
+.about .the-menu{
+   padding: 5rem 0;
+}
+.about .menu-btn{
+    margin-top: 2rem;
 }
 
 .tagline-wrapper .tagline-btn{
@@ -243,7 +277,6 @@ h1[data-scroll="in"],
     letter-spacing: 2px;
     font-family: 'Dex'; 
     font-size: 28px; 
-
 }
 .sub-text{ 
     margin: 0 auto;
@@ -407,8 +440,10 @@ h1[data-scroll="in"],
     .sub-text{ 
         font-size: 24px;
     } 
+    .about .tag-line .sub-text{
+        font-size: 20px;
+    }
     .contact-wrapper{ 
-
         display: flex; 
         justify-content: space-between;
     }
@@ -457,10 +492,12 @@ h1[data-scroll="in"],
         display: block;
     }
     .services .village .sub-title{  
-        
         font-size: 45px;
         top: 25%; 
     }
+    .about .the-menu{
+        padding: 8rem 0;
+     }
 }
 
 @media only screen and (min-width: 988px) { 
@@ -524,6 +561,13 @@ h1[data-scroll="in"],
     .services .village .sub-title{  
         font-size: 50px;
         top: 35%; 
+    }
+    .about .headshot-wrapper{  
+        display: flex;
+        flex-direction: row;
+    }  
+    .headshot-container img{
+        width: 70%;
     }
 }
 
