@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../img/fav-icon.png" type="image/x-icon">
     <link href="https://www.dafontfree.net/embed/ZGV4LWdvdGhpYy1iZWNrZXItc29saWQtcmVndWxhciZkYXRhLzM2L2QvMTI3NDg5L2RleF9nb3RoaWNfYmVja2VyX3NvbGlkLnR0Zg" rel="stylesheet" type="text/css"/>
     <title>Shear Genius - we pride ourselves on proffesionalism and customer satisfaction</title> 
-    <meta name="description" content="Shear Genius is a professional barbering and hair styling establishment based in Hawthorne that prides ourselves on customer satisfaction.">
+    <meta name="description" content="Shear Genius is a professional barbering and hair styling establishment based in Hawthorne that prides itself on customer satisfaction.">
     <meta name="keywords" content="Shear Genius, Barbershop, Beauty Salon, Hawthorne, mission-statement, our-goal, about us" >
 </head>
 <body>
@@ -79,6 +79,7 @@
 
         <!-- CenterPiece Section -->
         <section class="center-piece center-piece-about">
+            <img src="/imgs/backgrounds/About-bg-image.jpg" alt="Background image" class="center-piece-bg">
             <div class="container">
                 <h1 class="center-piece-text ">Hawthornes' forefront engineers in style and personal care</h1>
             </div>
@@ -88,8 +89,8 @@
         <section class="tag-line about-body dark-bg">
             <div class="container"> 
                 <div class="tagline-wrapper about-wrapper">
-                    <h2 class="sub-title">Our Story</h2> 
-                    <p class="sub-text">
+                    <h2 class="sub-title" data-aos="fade-up">Our Story</h2> 
+                    <p class="sub-text" data-aos="fade-up" data-aos-delay="200">
                         We at Shear Genius believe that going to the barbershop should be more than an errand but an experience to remember. 
                         Our mission is to ensure that every customer who walks out of our chair has not only received a new haircut, but impeccable service, 
                         and the confidence of a new person. Above all else, Shear-Genius is a professional barbering and hair-styling establishment that prides 
@@ -103,14 +104,52 @@
         <!-- Village Section -->
         <section class="village dark-bg">
             <div class="container">
-                <h1 class="sub-title">To Get a Haircut,<br> It Takes A Village</h1>
-                <div class="img-container">
-                    <img src="/imgs/photos/village.jpg" alt="people giving haircut to baby" class="img-item item-1">
-                    <img src="/imgs/photos/seasonal.jpg" alt="shop during the seasons" class="img-item item-2">
-                    <img src="/imgs/photos/Boyz.jpg" alt="customer sits in the chair, wearing a Boyz'n the hood shirt" class="img-item item-3">
-                    <img src="/imgs/photos/Shop-outside.jpg" alt="Picture of the barbershop from outside, looking through the window" class="img-item item-4">
-                    <img src="/imgs/photos/group-1.jpg" alt="Group photo of all 4 members of Shear Genius, outside the shop" class="img-item item-5">
-                    <img src="/imgs/photos/group-2.jpg" alt="Group photo of all 4 members of Shear Genius, formal setting" class="img-item item-6">
+                <h1 class="sub-title" data-aos="fade-up">To Get a Haircut,<br> It Takes A Village</h1>
+                <div class="village-slider">
+                    <div class="slider-container">
+                        <div class="slider-track">
+                            <div class="slide active" data-aos="fade-up" data-aos-delay="100">
+                                <img src="/imgs/photos/village.jpg" alt="people giving haircut to baby" class="img-item">
+                            </div>
+                            <div class="slide" data-aos="fade-up" data-aos-delay="200">
+                                <img src="/imgs/photos/seasonal.jpg" alt="shop during the seasons" class="img-item">
+                            </div>
+                            <div class="slide" data-aos="fade-up" data-aos-delay="300">
+                                <img src="/imgs/photos/Boyz.jpg" alt="customer sits in the chair, wearing a Boyz'n the hood shirt" class="img-item">
+                            </div>
+                            <div class="slide" data-aos="fade-up" data-aos-delay="400">
+                                <img src="/imgs/photos/Shop-outside.jpg" alt="Picture of the barbershop from outside, looking through the window" class="img-item">
+                            </div>
+                            <div class="slide" data-aos="fade-up" data-aos-delay="500">
+                                <img src="/imgs/photos/group-1.jpg" alt="Group photo of all 4 members of Shear Genius, outside the shop" class="img-item">
+                            </div>
+                            <div class="slide" data-aos="fade-up" data-aos-delay="600">
+                                <img src="/imgs/photos/group-2.jpg" alt="Group photo of all 4 members of Shear Genius, formal setting" class="img-item">
+                            </div>
+                        </div>
+                        
+                        <!-- Navigation Dots -->
+                        <div class="slider-dots">
+                            <span class="dot active" data-slide="0"></span>
+                            <span class="dot" data-slide="1"></span>
+                            <span class="dot" data-slide="2"></span>
+                            <span class="dot" data-slide="3"></span>
+                            <span class="dot" data-slide="4"></span>
+                            <span class="dot" data-slide="5"></span>
+                        </div>
+                        
+                        <!-- Navigation Arrows -->
+                        <button class="slider-arrow slider-prev" aria-label="Previous slide">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="slider-arrow slider-next" aria-label="Next slide">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section> 
@@ -118,8 +157,8 @@
         <!-- Menu Section -->
         <section class="the-menu light-bg">
                     <div class="container"> 
-                        <h2 class="sub-title">Ready to look your best?</h2> 
-                        <button class="menu-btn ">
+                        <h2 class="sub-title" data-aos="fade-up">Ready to look your best?</h2> 
+                        <button class="menu-btn" data-aos="fade-up" data-aos-delay="200">
                             <a title="booksy" href="https://booksy.com/en-us/638866_shear-genius_barber-shop_103704_hawthorne" target="_blank" class="btn btn-tan ">Book Now</a>
                         </button>
                     </div>
@@ -173,12 +212,24 @@
     
 
     
-    <script src="/js/scroll-out.js"></script> 
-    <script type="text/javascript">
-        ScrollOut({
-            targets: 'img, h1,h2,h3,p,a,button, span, div'
-        })
-    </script>
     <script src="/js/navbar.js"></script>
+    
+    <!-- Village Slider -->
+    <script src="/js/village-slider.js"></script>
+    
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100,
+            delay: 0
+        });
+    </script>
 </body>
 </html>

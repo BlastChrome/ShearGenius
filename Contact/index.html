@@ -75,6 +75,7 @@
     <main>
         <!-- CenterPiece Section -->
         <section class="center-piece center-piece-contact">
+            <img src="/imgs/backgrounds/Bg-image-contact.jpg" alt="Background image" class="center-piece-bg">
             <div class="container">
                 <h1 class="center-piece-text ">Contact Us</h1>
             </div>
@@ -84,32 +85,32 @@
           <section class="contact-section light-bg">
               <div class="container">
                   <div class="contact-top-half">
-                      <img src="/imgs/backgrounds/shop-outside--embellished.jpg" width="608" height="auto" alt="image of a barbershop spinner, reflecting the light of the sun"> 
-                      <div class="contact-form-wrapper">
+                      <img src="/imgs/backgrounds/shop-outside--embellished.jpg" width="608" height="auto" alt="image of a barbershop spinner, reflecting the light of the sun" data-aos="fade-up" data-aos-delay="100"> 
+                      <div class="contact-form-wrapper" data-aos="fade-up" data-aos-delay="200">
                           <h2 class="sub-title">Get In Touch</h2> 
                           <p class="sub-text">Use the form below, to leave us an email. Or if you prefer, give us a call - <a title="telephone" href="tel:310-676-3003" class="tel-blue">310.676.3003</a></p>
                           <form action="" method="post" class="contact-form-input-wrapper">
-                                <div class="input-wrapper">
+                                <div class="input-wrapper" data-aos="fade-up" data-aos-delay="300">
                                     <label for="name" class="sub-text">Name: *</label> 
                                     <input type="text" class="sub-text" name="name" placeholder="" required="true">
                                 </div>
-                                <div class="input-wrapper">
+                                <div class="input-wrapper" data-aos="fade-up" data-aos-delay="400">
                                     <label for="email" class="sub-text">Email: *</label> 
                                     <input type="email" class="sub-text" name="email"required="true">
                                 </div>
-                                <div class="input-wrapper">
+                                <div class="input-wrapper" data-aos="fade-up" data-aos-delay="500">
                                     <label for="message" class="sub-text">Message: *</label> 
                                     <!-- <input type="text" class="sub-text" name="message" required="true"> --> 
                                     <textarea name="message" id="" cols="30" rows="12"></textarea>
                                 </div>
-                                <button type="submit">
+                                <button type="submit" data-aos="fade-up" data-aos-delay="600">
                                     <a title="form submit" href="#" class="btn btn-black">Send</a>
                                 </button>
                           </form>
                       </div>
                   </div>
                   <div class="contact-bottom-half">
-                        <div class="mapWrapper" style="width: 100%; height: 450px; max-width: none; margin: 0 auto;">
+                        <div class="mapWrapper" data-aos="fade-up" data-aos-delay="700" style="width: 100%; height: 450px; max-width: none; margin: 0 auto;">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1418.7013994397373!2d-118.3538579737948!3d33.905922238240706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b43191b761d1%3A0x8abf5e33d3bd857e!2sShear%20Genius!5e0!3m2!1sen!2sus!4v1755748372418!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                   </div>
@@ -166,7 +167,21 @@
 
 
 
-    <script src="/js/scroll-out.js"></script> 
     <script src="/js/navbar.js"></script>
+    
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100,
+            delay: 0
+        });
+    </script>
 </body>
 </html>

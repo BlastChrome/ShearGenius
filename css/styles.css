@@ -9,67 +9,6 @@
 body {
   background-color: #000;
 }
-.animate {
-  animation-duration: 0.5s;
-  animation-name: fade-and-slide;
-}
-.animate-out {
-  animation-duration: 0.4s;
-  animation-name: fade-and-slide-out;
-}
-.center-piece-btn,
-.footer-book-btn,
-.footer-line,
-.footer-logo,
-.footer-social-container,
-.img-item,
-.menu-btn,
-.tagline-btn,
-h1,
-h2,
-h3,
-p {
-  transition: 0.8s;
-  transform: translateY(20px);
-  opacity: 0;
-}
-.center-piece-btn[data-scroll="in"],
-.footer-book-btn[data-scroll="in"],
-.footer-line[data-scroll="in"],
-.footer-logo[data-scroll="in"],
-.footer-social-container[data-scroll="in"],
-.img-item[data-scroll="in"],
-.menu-btn[data-scroll="in"],
-.tagline-btn[data-scroll="in"],
-a[data-scroll="in"],
-h1[data-scroll="in"],
-h2[data-scroll="in"],
-h3[data-scroll="in"],
-p[data-scroll="in"] {
-  transform: translateY(0);
-  transition-delay: 0.2s;
-  opacity: 1;
-}
-@keyframes fade-and-slide {
-  from {
-    transform: translateY(35px);
-    opacity: 0;
-  }
-  top {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes fade-and-slide-out {
-  from {
-    transform: translateY(-35px);
-    opacity: 1;
-  }
-  top {
-    transform: translateY(0);
-    opacity: 0;
-  }
-}
 .btn {
   padding: 0.65rem 2rem;
   transition: color 0.2s ease-in-out;
@@ -101,49 +40,200 @@ p[data-scroll="in"] {
 .d-none {
   visibility: hidden;
 }
+/* ===== CENTER PIECE SECTION ===== */
 .center-piece {
   width: 100%;
   text-align: center;
-  max-height: 960px;
-  min-height: 50vh;
+  min-height: 100vh;
   position: relative;
   background-color: var(--fourth-blue);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
-.center-piece-home {
-  background-image: url(/imgs/backgrounds/Bg-image.jpg);
+
+/* Background Images - Positioned Absolutely */
+.center-piece::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgb(255 255 255 / 18%), rgb(0 0 0 / 70%));
+  z-index: 1;
 }
-.center-piece-contact {
-  background-image: url(/imgs/backgrounds/Bg-image-contact.jpg);
+
+.center-piece-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
-.center-piece-services {
-  background-image: url(/imgs/backgrounds/Bg-image-Services.jpg);
-}
-.center-piece-about {
-  background-image: url(/imgs/backgrounds/About-bg-image.jpg);
-}
+
+/* Container Layout */
 .center-piece .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
+
+/* Main Heading */
 .center-piece-text {
-  font-size: 32px;
-  width: 100%;
-  font-family: Dex;
-  letter-spacing: 2px;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-family: "Dex", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
   color: var(--fifth-white);
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  max-width: 90%;
+  animation: fadeInUp 1s ease-out;
 }
+
+/* Call-to-Action Button */
 .center-piece-btn {
-  margin-top: 4.5rem;
+  margin-top: 3rem;
+  animation: fadeInUp 1s ease-out 0.3s both;
+  cursor: pointer;
 }
+
 .center-piece-btn a {
-  font-size: 23px;
-  padding: 15px 45px;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.center-piece-btn a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Mobile First - Base Styles */
+@media only screen and (max-width: 767px) {
+  .center-piece {
+    min-height: 80vh;
+    padding-top: 80px; /* Account for fixed header */
+  }
+
+  .center-piece .container {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .center-piece-text {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .center-piece-btn {
+    margin-top: 2rem;
+  }
+
+  .center-piece-btn a {
+    padding: 0.875rem 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .center-piece {
+    min-height: 90vh;
+  }
+
+  .center-piece .container {
+    padding: 3rem 2rem;
+  }
+
+  .center-piece-text {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    max-width: 80%;
+  }
+
+  .center-piece-btn {
+    margin-top: 2.5rem;
+  }
+
+  .center-piece-btn a {
+    padding: 1.125rem 2.25rem;
+    font-size: 1.25rem;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+  .center-piece {
+    min-height: 100vh;
+  }
+
+  .center-piece .container {
+    padding: 4rem 2rem;
+  }
+
+  .center-piece-text {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    max-width: 70%;
+    letter-spacing: 1.5px;
+  }
+
+  .center-piece-btn {
+    margin-top: 3rem;
+  }
+
+  .center-piece-btn a {
+    padding: 1.25rem 3rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.75px;
+  }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1440px) {
+  .center-piece-text {
+    font-size: 4.5rem;
+    max-width: 60%;
+  }
+
+  .center-piece-btn a {
+    padding: 1.5rem 3.5rem;
+    font-size: 1.75rem;
+  }
 }
 .tagline-wrapper {
   display: flex;
@@ -206,6 +296,15 @@ p[data-scroll="in"] {
 }
 .tagline-wrapper .tagline-btn {
   margin: 3rem 0;
+  cursor: pointer;
+}
+
+.tagline-btn {
+  cursor: pointer;
+}
+
+.tagline-btn a {
+  cursor: pointer;
 }
 .sub-text,
 .sub-title {
@@ -230,9 +329,32 @@ textarea {
   font-size: 16px;
   padding: 0 0.5rem;
   background-color: #fff;
+  cursor: text;
 }
 .input-wrapper input.sub-text {
   height: 33px;
+}
+
+.input-wrapper input.sub-text:focus,
+textarea:focus {
+  cursor: text;
+  outline: 2px solid var(--main-green);
+  border-radius: 4px;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+button[type="submit"] a {
+  cursor: pointer;
 }
 .sub-title {
   margin: 3rem 0;
@@ -254,19 +376,29 @@ textarea {
 }
 .contact-wrapper .contact-card {
   margin: 3rem 0;
+  cursor: pointer;
 }
+
 .tel-link {
   color: var(--main-green);
   cursor: pointer;
   text-decoration: underline;
 }
+
 .tagline-line {
   background-color: var(--main-green);
   width: 100%;
   height: 2px;
   margin-bottom: 2rem;
 }
+
 .img-item {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.img-item:hover {
+  transform: scale(1.05);
   cursor: pointer;
 }
 .banner {
@@ -318,27 +450,38 @@ textarea {
 .the-menu .menu-card {
   margin-bottom: 4rem;
   font-family: brandon;
+  cursor: pointer;
 }
+
 .card-text,
 .card-title {
   text-align: center;
 }
+
 .card-title {
   font-size: 26px;
   font-weight: 700;
 }
+
 .card-text {
   margin-top: 8px;
   font-size: 23px;
 }
+
 .card-content {
   text-align: center;
   font-size: 17px;
   color: var(--seventh-tan);
 }
+
 .menu-btn a {
   font-size: 23px;
   padding: 15px 45px;
+  cursor: pointer;
+}
+
+.menu-btn {
+  cursor: pointer;
 }
 .village {
   padding: 5rem 0;
@@ -376,10 +519,6 @@ textarea {
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
-  .center-piece-text {
-    width: 80%;
-    font-size: 40px;
-  }
   .sub-text {
     font-size: 24px;
   }
@@ -442,11 +581,6 @@ textarea {
   }
 }
 @media only screen and (min-width: 988px) {
-  .center-piece-text {
-    margin-top: 9rem;
-    max-width: 700px;
-    font-size: 52px;
-  }
   .sub-title {
     margin: 6.5rem 0 2rem 0;
     font-size: 38px;
@@ -510,4 +644,350 @@ textarea {
   .headshot-container img {
     width: 70%;
   }
+}
+
+/* ===== CURSOR POINTER FOR INTERACTIVE ELEMENTS ===== */
+.nav-link,
+.mb-nav-link,
+.footer-link a,
+.social-link,
+.mb-social-link,
+.btn,
+.navbar-book-btn,
+.mb-nav-btn,
+.footer-book-btn,
+.menu-btn,
+.tagline-btn,
+.tel-link,
+.tel-blue,
+.logo-links,
+.footer-logo-wrapper a,
+.footer-social-link-wrapper a,
+.img-item,
+.menu-card,
+.contact-card,
+.center-piece-btn a,
+.center-piece-btn,
+input[type="submit"],
+button[type="submit"],
+textarea,
+input[type="text"],
+input[type="email"],
+.footer-social-container img,
+.footer-hours-wrapper,
+.footer-location-wrapper,
+.footer-logo-wrapper,
+.footer-social-link-wrapper,
+.footer-book-btn a,
+.footer-link,
+.footer-social-container,
+.footer-logo,
+.footer-title,
+.footer-text,
+.footer-ak,
+.footer-end,
+.footer-line {
+  cursor: pointer;
+}
+
+/* Specific cursor styles for different element types */
+.nav-link:hover,
+.mb-nav-link:hover,
+.footer-link a:hover,
+.social-link:hover,
+.mb-social-link:hover,
+.btn:hover,
+.navbar-book-btn:hover,
+.mb-nav-btn:hover,
+.footer-book-btn:hover,
+.menu-btn:hover,
+.tagline-btn:hover,
+.tel-link:hover,
+.tel-blue:hover,
+.logo-links:hover,
+.footer-logo-wrapper a:hover,
+.footer-social-link-wrapper a:hover,
+.footer-social-container img:hover,
+.footer-link:hover {
+  cursor: pointer;
+}
+
+/* Form elements that should have text cursor */
+input[type="text"],
+input[type="email"],
+textarea {
+  cursor: text;
+}
+
+/* Buttons and clickable elements */
+button,
+.btn,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* Disable cursor pointer for disabled elements */
+.btn:disabled,
+button:disabled,
+input:disabled {
+  cursor: not-allowed;
+}
+
+/* Footer specific cursor styles */
+.footer-logo-wrapper a,
+.footer-social-link-wrapper a,
+.footer-book-btn,
+.footer-social-container img {
+  cursor: pointer;
+}
+
+.footer-book-btn {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-book-btn:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.footer-book-btn a {
+  cursor: pointer;
+}
+
+.footer-book-btn .btn {
+  cursor: pointer;
+}
+
+/* Navigation and social media links */
+.navbar a,
+.mb-navbar a,
+.social-link-container a,
+.mb-social-links a {
+  cursor: pointer;
+}
+
+/* Logo and branding elements */
+.logo-container a,
+.logo-links {
+  cursor: pointer;
+}
+
+/* ===== VILLAGE SLIDER ===== */
+.village-slider {
+  margin-top: 3rem;
+  position: relative;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider-track {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+/* Enhanced crossfade transitions */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  will-change: opacity;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 2;
+  pointer-events: auto;
+}
+
+.slide.fade-out {
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.slide.fade-in {
+  opacity: 1;
+  z-index: 2;
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Ensure smooth image transitions */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.slide.active img {
+  transform: scale(1);
+}
+
+.slide img:hover {
+  transform: scale(1.02);
+}
+
+/* Navigation Dots */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 2rem;
+  z-index: 10;
+  position: relative;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  transform: scale(1.2);
+}
+
+.dot.active {
+  background-color: var(--main-green);
+  border-color: var(--main-green);
+  transform: scale(1.2);
+}
+
+/* Navigation Arrows */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+.slider-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.slider-arrow:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.slider-prev {
+  left: 10px;
+}
+
+.slider-next {
+  right: 10px;
+}
+
+.slider-arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive adjustments for slider */
+@media only screen and (max-width: 767px) {
+  .slider-track {
+    height: 300px;
+  }
+
+  .slider-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .slider-prev {
+    left: 10px;
+  }
+
+  .slider-next {
+    right: 10px;
+  }
+
+  .slider-dots {
+    margin-top: 1.5rem;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .slider-track {
+    height: 350px;
+  }
+
+  .slider-arrow {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* Ensure slider works well with existing village section */
+.village .village-slider {
+  margin-top: 3rem;
+}
+
+.village .slider-container {
+  max-width: 800px;
+}
+
+/* Override any conflicting img-item styles for slider */
+.village-slider .img-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 8px;
+}
+
+/* Enhanced slider accessibility */
+.slider-arrow:focus,
+.dot:focus {
+  outline: 2px solid var(--main-green);
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for all slider elements */
+.slider-container * {
+  transition: all 0.3s ease;
 }
