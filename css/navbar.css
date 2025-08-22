@@ -27,6 +27,7 @@ header .container {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1001;
+  cursor: pointer;
 }
 
 .logo-container img {
@@ -49,6 +50,10 @@ header .container {
   gap: 2rem;
 }
 
+.navbar li {
+  cursor: pointer;
+}
+
 .nav-link {
   color: var(--fifth-white);
   text-decoration: none;
@@ -57,9 +62,11 @@ header .container {
   transition: all 0.3s ease;
   position: relative;
   padding: 0.5rem 0;
+  cursor: pointer;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
   color: var(--main-green);
 }
 
@@ -74,7 +81,8 @@ header .container {
   transition: width 0.3s ease;
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
   width: 100%;
 }
 
@@ -89,6 +97,7 @@ header .container {
   width: 24px;
   height: 24px;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .social-link:hover {
@@ -197,6 +206,7 @@ header .container {
 
 .mb-navbar li {
   margin-bottom: 1.5rem;
+  cursor: pointer;
 }
 
 .mb-nav-link {
@@ -207,9 +217,11 @@ header .container {
   transition: all 0.3s ease;
   display: block;
   padding: 1rem 0;
+  cursor: pointer;
 }
 
-.mb-nav-link:hover {
+.mb-nav-link:hover,
+.mb-nav-link.active {
   color: var(--main-green);
   transform: translateX(10px);
 }
@@ -226,6 +238,7 @@ header .container {
   width: 32px;
   height: 32px;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .mb-social-links img:hover {
