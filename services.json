@@ -1,0 +1,159 @@
+[
+    {
+        "category": "Adult Haircuts (facial services not included)",
+        "title": "Edge Up (razor not included)",
+        "text": "This service is to solely outline (edge up) the hair.",
+        "price": "$15.00+",
+        "duration": "5min"
+    },
+    {
+        "category": "Adult Haircuts (facial services not included)",
+        "title": "Even Under Cut, Sides/Back",
+        "text": "This service is to solely lower the hair on the side to the head to an all even length without being blended or tapered. This does not included anything off of the top.",
+        "price": "$20.00+",
+        "duration": "10min"
+    },
+    {
+        "category": "Adult Haircuts (facial services not included)",
+        "title": "Taper & Edge Up Only (top/razor not included)",
+        "text": "This service is meant for blending the temples and the nape of the neck only and includes the outlining (edge up) of the hair.",
+        "price": "$25.00+",
+        "duration": "15min"
+    },
+    {
+        "category": "Adult Haircuts (facial services not included)",
+        "title": "Fade, Sides & Back Only (top not included)",
+        "text": "This service gives the option of either a bald or shadow fade for the sides and back section of the head only without anything taken off the top.",
+        "price": "$30.00+",
+        "duration": "20min"
+    },
+    {
+        "category": "Adult Haircuts (facial services not included)",
+        "title": "Bald Head (Clippers/shaver only)",
+        "text": "This service provides the clearing of all hair from the scalp with the clipper outliners and electric shaver. (razor work must be specified in the add-on section)",
+        "price": "$30.00+",
+        "duration": "20min"
+    },
+    {
+        "category": "Adult Haircuts (facial services not included)",
+        "title": "Even Haircut, Level 2 or Less (face not included)",
+        "text": "This service provides a singular low level in length (¼ inch or less) haircut with no variation and includes an edge up.",
+        "price": "$30.00+",
+        "duration": "20min"
+    },
+    {
+        "category": "Adult Haircuts (facial services not included)",
+        "title": "Fade, Level 2 or Less (face not included)",
+        "text": "This service provides a complete, low level in length (¼ inch or less), haircut of your choice (bald, shadow, or taper fade) with edge up included.",
+        "price": "$35.00+",
+        "duration": "25min"
+    },
+    {
+        "category": "Adult Haircuts (facial services not included)",
+        "title": "Fade, Level 3 - 7 (face not included)",
+        "text": "This service provides a complete mid level in length (½ inch - 1 ½ inches), haircut of your choice (bald, shadow, or taper fade) with edge up included.",
+        "price": "$40.00+",
+        "duration": "30min"
+    },
+    {
+        "category": "Adult Haircuts (facial services not included)",
+        "title": "Haircuts, Level 8 or More (face not included)",
+        "text": "This service provides a full, high level in length (1 ¾ inches or more), haircut of your choice (bald, shadow, or taper fade) with edge up included.",
+        "price": "$45.00+",
+        "duration": "30min"
+    },
+    {
+        "category": "Facial Services (razor work not included)",
+        "title": "Eyebrow grooming (razor not included)",
+        "text": "This service provides trimming & shaping for the eyebrows",
+        "price": "$5.00+",
+        "duration": "5min"
+    },
+    {
+        "category": "Facial Services (razor work not included)",
+        "title": "Mustache Trim",
+        "price": "$5.00+",
+        "duration": "5min"
+    },
+    {
+        "category": "Facial Services (razor work not included)",
+        "title": "Clean Face w/ Clippers & Hot Towel",
+        "text": "This service is for ridding the face of all hair without an edge up.",
+        "price": "$15.00+",
+        "duration": "10min"
+    },
+    {
+        "category": "Facial Services (razor work not included)",
+        "title": "Goatee edge only (razor not included)",
+        "price": "$10.00+",
+        "duration": "5min"
+    },
+    {
+        "category": "Facial Services (razor work not included)",
+        "title": "Goatee Trim only (razor not included)",
+        "text": "This service is to provide a trimming of the cheeks and outline to the goatee area around the mouth",
+        "price": "$15.00+",
+        "duration": "10min"
+    },
+    {
+        "category": "Facial Services (razor work not included)",
+        "title": "Beard Edge Up only (razor not included)",
+        "price": "$15.00+",
+        "duration": "10min"
+    },
+    {
+        "category": "Facial Services (razor work not included)",
+        "title": "Beard Trim (razor not included)",
+        "text": "This service provides a trim and outline of the beard with the clippers only. Electric shaver or razor would have to be specified in the add-ons",
+        "price": "$20.00+",
+        "duration": "15min"
+    },
+    {
+        "category": "Children's Haircuts (ages 4 - 13)",
+        "title": "Child's Edge Up",
+        "price": "$10.00+",
+        "duration": "5min"
+    },
+    {
+        "category": "Children's Haircuts (ages 4 - 13)",
+        "title": "Child's Taper & Edge Up (top not included)",
+        "text": "This service provides an edge up and blending of the temples and the nape of the neck only.",
+        "price": "$20.00+",
+        "duration": "10min"
+    },
+    {
+        "category": "Children's Haircuts (ages 4 - 13)",
+        "title": "Child's Fade, Sides & Back Only",
+        "text": "This service provides either a bald or shadow fade for the sides and back only with nothing done to the top portion of the",
+        "price": "$25.00+",
+        "duration": "15min"
+    },
+    {
+        "category": "Children's Haircuts (ages 4 - 13)",
+        "title": "Child's Even Haircut, Level 2 or Less",
+        "text": "This service provides a low level (¼ inch or less) haircut, all one length and includes an edge up.",
+        "price": "$25.00+",
+        "duration": "15min"
+    },
+    {
+        "category": "Children's Haircuts (ages 4 - 13)",
+        "title": "Child's Fades, Level 2 or less on top",
+        "text": "This service provides a full, low level (¼ inch or less), haircut of your choice (bald, shadow, or taper fade) with edge up included.",
+        "price": "$30.00+",
+        "duration": "20min"
+    },
+    {
+        "category": "Children's Haircuts (ages 4 - 13)",
+        "title": "Child's Fades, Level 3 - 6 on top",
+        "text": "This service provides a full, mid level in length (½ inch - 1 ½ inches), haircut of your choice (bald, shadow, or taper fade) with edge up included.",
+        "price": "$35.00+",
+        "duration": "25min"
+    },
+    {
+        "category": "Children's Haircuts (ages 4 - 13)",
+        "title": "Child's Haircut, Level 7 or more on top",
+        "text": "This service provides a full, high level in length (1 ¾ inches or more), haircut of your choice (all even or faded) with edge up included.",
+        "price": "$40.00+",
+        "duration": "30min"
+    }
+]

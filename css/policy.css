@@ -1,0 +1,102 @@
+.policy-page {
+  background-color: #000;
+  padding: 8rem 0 5rem;
+  min-height: 100vh;
+}
+
+.policy-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.policy-title {
+  font-family: Dex, sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: #fff;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.policy-meta {
+  font-family: brandon, sans-serif;
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 3rem;
+}
+
+.policy-heading {
+  font-family: Dex, sans-serif;
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 2.5rem 0 0.75rem;
+  letter-spacing: 1px;
+}
+
+.policy-subheading {
+  font-family: brandon, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ccc;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.policy-text {
+  font-family: brandon, sans-serif;
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.policy-list {
+  font-family: brandon, sans-serif;
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.8;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  list-style: disc;
+}
+
+.policy-list li {
+  margin-bottom: 0.5rem;
+}
+
+.policy-callout {
+  border-left: 3px solid var(--main-green);
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 0 4px 4px 0;
+}
+
+.policy-callout .policy-text {
+  margin-bottom: 0.5rem;
+}
+
+.policy-callout .policy-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Footer policy links */
+.footer-policy-links {
+  text-align: center;
+  padding: 0.75rem 0 0.25rem;
+  font-family: brandon, sans-serif;
+  font-size: 13px;
+}
+
+.footer-policy-link {
+  color: #888;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.footer-policy-link:hover {
+  color: var(--main-green);
+}
+
+.footer-policy-sep {
+  color: #555;
+  margin: 0 0.5rem;
+}
